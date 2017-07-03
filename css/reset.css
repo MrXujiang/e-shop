@@ -1,0 +1,10 @@
+body,ul,li,ol,p,h1,h2,h3,form,table,td,img,div,dl,dt,dd,input,fieldset{margin:0;padding:0;}
+body{font:12px/1 "microsoft yahei","微软雅黑";}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}  /*textarea标签中，Webkit内核的浏览器会默认resize的值为both，即用户可以调节元素的宽度和高度*/
+a{text-decoration:none;color:#666666;}
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}

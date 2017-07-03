@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>e商城</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+		<link rel="stylesheet" href="css/reset.css" type="text/css"/>		
+	</head>
+	<body>
+		<div id="header" class="header">
+			<div class="top_bar">
+				<div class="widthbox">
+					<div class="left"><span>收藏网站</span></div>
+					<div class="right">
+						<p>欢迎来到e商城！<a href="">[登录]</a><a href="">[注册]</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="logo_bar">
+				<div class="widthbox">
+						<div class="logo"><a href="index.html">E-shop</a></div>
+						<div class="search_text">
+							<input type="text" id="searchtxt" />
+							<input type="button" id="btn" value="搜 索" />
+						</div>
+						<div class="shop_car">
+							<span class="car">购物车</span><span class="num">0</span>
+						</div>
+				</div>
+			</div>
+			<div class="widthbox">
+				<div class="per_intro">
+					<h3>收货信息</h3>
+					<form action="" method="post">
+						<p>
+							<label for="addr"><span>*</span>详细地址：</label>
+							<select id="addr">
+								<option>武汉科技大学&nbsp;青山校区</option>
+								<option>武汉科技大学&nbsp;黄家湖校区</option>
+								<option>武汉科技大学&nbsp;洪山校区</option>
+								<option>湖北中医药大学</option>
+								<option>武汉交通职业学院</option>
+								<option>长江工商学院</option>
+							</select> 
+						</p>
+						<p>
+							<label for="address"><span>*</span>详细地址：</label>
+							<input type="text" placeholder="最多输入16个汉字" maxlength="16" id="address"/>
+						</p>
+						<p>
+							<label for="pername"><span>*</span>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</label>
+							<input type="text" placeholder="最多输入10个汉字" maxlength="10" id="pername"/>
+						</p>
+						<p>
+							<label for="phone"><span>*</span>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</label>
+							<input type="text" placeholder="如15671677807"  id="phone"/>
+							<label for="phone"><span>*</span>或固定电话：</label>
+							<input type="text" placeholder="区号+电话号码"  id="t_phone"/>
+						</p>
+						<p>
+							<input type="button" value="确认收获地址" id="sure"/>
+						</p>
+					</form>
+				</div>
+				<div class="per_intro pay">
+					<h3>支付方式</h3>
+					<form action="" method="post">
+						<p>
+							<input type="radio" id="wechat" value="微信支付" name="cost-way"/><span>用微信扫一扫就可以支付</span>
+						</p>
+						<p>
+							<input type="radio" id="zfb" value="支付宝" name="cost-way"/><span>支付宝，轻松便捷</span>
+						</p>
+					</form>
+				</div>
+				<div class="per_intro">
+					<h3>发票信息</h3>
+					<form action="" method="post">
+						<p>
+							<input type="checkbox" id="checkbox" value="发票" name="checkbox" /><i>需要发票</i>
+						</p>
+						<p>
+							<label for="addr"><span>*</span>发票类型：</label>
+							<select id="addr">
+								<option>商业零售发票</option>
+								<option>公司报销发票</option>
+							</select> 
+						</p>
+						<p>
+							<label for="addr"><span>*</span>发票抬头：</label>
+							<select id="addr">
+								<option>个人</option>
+								<option>公司</option>
+							</select> 
+							<input type="text" placeholder="e-shop" value="e-shop" id="eshop" disabled="true"/>
+						</p>
+						<p>
+							<input type="button" value="保存" id="save"/>
+							<input type="button" value="取消" id="cancel"/>
+						</p>
+					</form>
+				</div>
+				<div class="per_intro">
+					<h3>送货清单<a href="" class="change">返回购物车修改</a></h3>
+				        <table>
+				        	<thead>
+				        		<th class="p_name">商品名称</th><th>单价</th><th>返现</th><th>数量</th><th>小记</th>				        						        								        		
+				        	</thead>
+				        	<tbody>
+				        		<tr>
+				        			<td class="p_img">
+				        				<p><a href="">海信冰箱</a></p>
+				        				<p><a href="">[赠品]保鲜盒一枚</a></p>
+				        			</td>
+				        			<td>&yen;1540.00</td>
+				        			<td>&yen;0.00</td>
+				        			<td>1</td>
+				        			<td class="price">&yen;1540.00</td>
+				        		</tr>
+				        	</tbody>
+				        </table>
+				        <p class="leave-mes">若您有特殊要求，请在此留言</p>
+				        <div class="nobuy">
+				        	<p class="nomes">抱歉，以下商品不能购买，以帮您在此结算中剔除本商品的金额，您可以选购其他商品：）</p>
+				        	<table>
+				        		<tr>
+				        			<td class="p_img no">
+				        				<p><a href="">海信冰箱</a></p>
+				        				<p>库存不够</p>
+				        			</td>
+				        		</tr>
+				        	</table>
+				        </div>
+				</div>
+				<div class="per_intro clearfix">
+					<h3>订单结算</h3>
+					<div class="sub">
+						<p>
+							总计：<span class="total-price">&yen;1540.00</span>							
+						</p>
+						<p>							
+							<input type="submit" value="提交订单" id="submit"/>
+						</p>
+					</div>
+				</div>
+		</div>
+		<div class="footer">
+			<div class="address">
+				<ul>
+					<li><a href="">慕课简介|</a></li>
+					<li><a href="">慕课公告|</a></li>
+					<li><a href="">招贤纳士|</a></li>
+					<li><a href="">联系我们|</a><span>客服热线：400-675-1234</span></li>
+				</ul>
+				<p>Copyright © 2006 - 2014 慕课版权所有   京ICP备09037834号   京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</p>
+				<p class="card"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"></p>
+			</div>
+		</div>
+	</body>
+</html>

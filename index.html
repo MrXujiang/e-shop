@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>e商城</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<link rel="stylesheet" href="css/reset.css" type="text/css" />
+		<script src="js/index.js" type="text/javascript"></script>
+		<!--
+        	作者：1427439870@qq.com
+        	时间：2016-11-09
+        	描述：
+        <script src="js/lunbo.js" type="text/javascript"></script>
+        -->
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<div class="top_bar">
+				<div class="widthbox">
+					<div class="left"><span>收藏网站</span></div>
+					<div class="right">
+						<p>欢迎来到e商城！<span>[登录]</span><span id="register">[注册]</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="logo_bar">
+				<div class="widthbox">
+					<div class="logo"><a href="index.html">E-shop</a></div>
+					<div class="search_text">
+						<input type="text" id="searchtxt" />
+						<input type="button" id="btn" value="搜 索" />
+					</div>
+					<div class="shop_car">
+						<span class="car">购物车</span><span class="num">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="nav_bar">
+				<div class="widthbox">
+					<div class="shopclass">
+						<h3 style="font-size:16px;">全部商品分类</h3>
+						<div class="shop_show" id="subnav">
+							<dl>
+								<dt><a href="product_class.html">手机</a><a href="product_class.html">数码</a><a href="product_class.html" class="alink a">相机</a></dt>
+								<dd><a href="">荣耀</a><a href="">单反</a><a href="">智能设备</a></dd>
+							</dl>
+							<dl class="active">
+								<dt><a href="">电脑</a><a href="">硬件外设</a><a href="" class="alink">装机宝</a></dt>
+								<dd><a href="">笔记本</a><a href="">台式机</a><a href="">超级本</a><a href="">平板</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">大家电</a>
+								<dd><a href="">电视</a><a href="">空调</a><a href="">冰箱</a><a href="">洗衣机</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">手机</a><a href="">数码</a><a href="" class="alink">合约机</a></dt>
+								<dd><a href="">荣耀</a><a href="">单反</a><a href="">智能设备</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">食品/饮料/生鲜</a><a href="" class="alink a">粮油</a></dt>
+								<dd><a href="">进口</a><a href="">零食</a><a href="">保健</a></dd>
+							</dl>
+						</div>
+						<div id="class-list">
+							<div class="shop_list">
+								<dl>
+									<dt><a href="">电脑整机</a></dt>
+									<dd><a href="">笔记本</a><a href="">超级本</a><a href="">上网本</a><a href="">平板电脑</a><a href="">台式机</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">装机配件</a></dt>
+									<dd><a href="">内存</a><a href="">CPU</a><a href="">显示</a><a href="">硬盘</a><a href="">WiFi</a><a href="">机箱</a><a href="">电源</a><a href="">显示器</a><a href="">台式机</a><a href="">固态硬盘</a>
+										<br>
+										<a href="">散热器</a><a href="">刻录机</a><a href="">声卡</a><a href="">扩展卡</a><a href="">服务器配件</a><a href="">DIV小附件</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">整机附件</a></dt>
+									<dd><a href="">电脑包</a><a href="">电脑桌</a><a href="">电池</a><a href="">笔记本散热器</a><a href="">USB扩展</a><a href="">贴膜</a><a href="">平板配件</a><a href="">清洁品</a>
+										<br>
+										<a href="">网线</a><a href="">插座</a><a href="">影音线材</a><a href="">电脑线材</a><a href="">耳机</a><a href="">键盘</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">电脑外设</a></dt>
+									<dd><a href="">内存</a><a href="">CPU</a><a href="">显示</a><a href="">硬盘</a><a href="">WiFi</a><a href="">机箱</a><a href="">电源</a><a href="">显示器</a><a href="">台式机</a><a href="">固态硬盘</a>
+										<br>
+										<a href="">散热器</a><a href="">刻录机</a><a href="">声卡</a><a href="">扩展卡</a><a href="">服务器配件</a><a href="">DIV小附件</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<p class="shop_btn">
+									<a href="">电脑整机频道</a><a href="">硬件/外设频道</a>
+								</p>
+							</div>
+							<div class="shop_list">
+								<dl>
+									<dt><a href="">电脑整机</a></dt>
+									<dd><a href="">笔记本</a><a href="">超级本</a><a href="">上网本</a><a href="">平板电脑</a><a href="">台式机</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">装机配件</a></dt>
+									<dd><a href="">内存</a><a href="">CPU</a><a href="">显示</a><a href="">硬盘</a><a href="">WiFi</a><a href="">机箱</a><a href="">电源</a><a href="">显示器</a><a href="">台式机</a><a href="">固态硬盘</a>
+										<br>
+										<a href="">散热器</a><a href="">刻录机</a><a href="">声卡</a><a href="">扩展卡</a><a href="">服务器配件</a><a href="">DIV小附件</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<p class="shop_btn">
+									<a href="">电脑整机频道</a><a href="">硬件/外设频道</a>
+								</p>
+							</div>
+							<div class="shop_list">
+								<dl>
+									<dt><a href="">电脑整机</a></dt>
+									<dd><a href="">笔记本</a><a href="">超级本</a><a href="">上网本</a><a href="">平板电脑</a><a href="">台式机</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<p class="shop_btn">
+									<a href="">电脑整机频道</a><a href="">硬件/外设频道</a>
+								</p>
+							</div>
+							<div class="shop_list">
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">装机配件</a></dt>
+									<dd><a href="">内存</a><a href="">CPU</a><a href="">显示</a><a href="">硬盘</a><a href="">WiFi</a><a href="">机箱</a><a href="">电源</a><a href="">显示器</a><a href="">台式机</a><a href="">固态硬盘</a>
+										<br>
+										<a href="">散热器</a><a href="">刻录机</a><a href="">声卡</a><a href="">扩展卡</a><a href="">服务器配件</a><a href="">DIV小附件</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<p class="shop_btn">
+									<a href="">电脑整机频道</a><a href="">硬件/外设频道</a>
+								</p>
+							</div>
+							<div class="shop_list">
+								<dl>
+									<dt><a href="">电脑整机</a></dt>
+									<dd><a href="">笔记本</a><a href="">超级本</a><a href="">上网本</a><a href="">平板电脑</a><a href="">台式机</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">装机配件</a></dt>
+									<dd><a href="">内存</a><a href="">CPU</a><a href="">显示</a><a href="">硬盘</a><a href="">WiFi</a><a href="">机箱</a><a href="">电源</a><a href="">显示器</a><a href="">台式机</a><a href="">固态硬盘</a>
+										<br>
+										<a href="">散热器</a><a href="">刻录机</a><a href="">声卡</a><a href="">扩展卡</a><a href="">服务器配件</a><a href="">DIV小附件</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="">网络设备</a></dt>
+									<dd><a href="">路由器</a><a href="">网卡</a><a href="">3G无线上网</a><a href="">交换机</a><a href="">网络存储</a></dd>
+								</dl>
+								<dl>
+									<dt><a href="">音频设备</a></dt>
+									<dd><a href="">音箱</a><a href="">耳机</a><a href="">麦克风</a><a href="">音频附件</a><a href="">录音笔</a></dd>
+								</dl>
+								<p class="shop_btn">
+									<a href="">电脑整机频道</a><a href="">硬件/外设频道</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<ul class="nav">
+						<li><a href="" class="on">数码城</a></li>
+						<li><a href="">夜生活</a></li>
+						<li><a href="">团购</a></li>
+						<li><a href="">发现</a></li>
+						<li><a href="">二手特卖</a></li>
+						<li><a href="">名品会</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="banner" class="banner widthbox clearfix">
+			<div class="banner_bar" id="banner_bar">
+				<ul class="imgbox" id="imgbox" style="left:-810px">
+					<li>
+						<a href=""><img src="img/banner/2.png" alt="banner"></a>
+					</li>
+					<li class="img_active">
+						<a href=""><img src="img/banner/1.png" alt="banner"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/2.png" alt="banner"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/1.png" alt="banner"></a>
+					</li>
+				</ul>
+				<div class="imgnum" id="m_btn">
+					<span index="1" class="num_active"></span><span index="2"></span>
+				</div>
+			</div>
+		</div>
+		<div class="listbox widthbox ">
+			<div class="tit">
+				<h3>家用电脑</h3><a href="">更多&gt;&gt;</a>
+			</div>
+			<div class="leftbox">
+				<div class="left_banner" id="left_banner">
+					<ul class="left_img" id="left_img" style="left:-190px">
+						<li>
+							<a href=""><img src="img/banner/4.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/3.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/4.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/3.png" alt="banner"></a>
+						</li>
+					</ul>
+					<div class="imgnum" id="l_btn">
+						<span index="1" class="num_active"></span><span index="2"></span>
+					</div>
+				</div>
+			</div>
+			<div class="rightbox">
+				<ul class="right_top">
+					<li class="">
+						<a href=""><img src="img/banner/list_1.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_1.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_1.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_1.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+				</ul>
+				<ul class="right_btm clearfix">
+					<li class="">
+						<a href="product_intro.html" class="fl"><img src="img/banner/list_2.png" alt="banner"></a>
+						<h4><a href="product_intro.html" class="mark">全网低价 Apple苹果iPad mini1</a><span>&yen;149.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_3.png" alt="banner"></a>
+						<h4><a href="">Samsung三星GALAXY Grand2</a><span>&yen;2000.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_4.png" alt="banner"></a>
+						<h4><a href="">NFC技术一碰轻松配对！接触屏幕</a><span>&yen;1888.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_5.png" alt="banner"></a>
+						<h4><a href="">全网低价 Apple苹果iPad mini1</a><span>&yen;20020.00</span></h4>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="listbox widthbox ">
+			<div class="tit">
+				<h3>食品酒水</h3><a href="">更多&gt;&gt;</a>
+			</div>
+			<div class="leftbox">
+				<div class="left_banner" id="left2_banner">
+					<ul class="left_img" id="left2_img" style="left:-190px">
+						<li>
+							<a href=""><img src="img/banner/3.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/4.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/3.png" alt="banner"></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner/4.png" alt="banner"></a>
+						</li>
+					</ul>
+					<div class="imgnum" id="l2_btn">
+						<span index="1" class="num_active"></span><span index="2"></span>
+					</div>
+				</div>
+			</div>
+			<div class="rightbox">
+				<ul class="right_top">
+					<li class="">
+						<a href=""><img src="img/banner/list_6.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_6.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_6.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+					<li>
+						<a href=""><img src="img/banner/list_6.png" alt="banner"></a>
+						<h3><a href="">HTC新渴望8系列</a><span>1899元</span></h3>
+					</li>
+				</ul>
+				<ul class="right_btm clearfix">
+					<li class="">
+						<a href="" class="fl"><img src="img/banner/list_7.png" alt="banner"></a>
+						<h4><a href="" class="mark">康比特 维他保咀嚼片 40片</a><span>&yen;444.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_7.png" alt="banner"></a>
+						<h4><a href="">康比特 维他保咀嚼片 40片</a><span>&yen;444.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_7.png" alt="banner"></a>
+						<h4><a href="">康比特 维他保咀嚼片 40片</a><span>&yen;444.00</span></h4>
+					</li>
+					<li>
+						<a href="" class="fl"><img src="img/banner/list_7.png" alt="banner"></a>
+						<h4><a href="">康比特 维他保咀嚼片 40片</a><span>&yen;444.00</span></h4>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="m-register" id="user-register">
+			<form action="" method="post" class="u-form" id="">
+				<h3>E-shop会员注册</h3>
+				<p>
+					<input type="text" placeholder="请输入邮箱/手机号" id="username" required />
+				</p>
+				<p>
+					<input type="password" placeholder="请输入密码" id="password" required />
+				</p>
+				<p>
+					<input type="password" placeholder="请再次输入密码" id="repassord" required />
+				</p>
+				<p>
+					<input type="button" class="u-form-btn" id="btn" value="注册" />
+				</p>
+				<span class="close">关闭</span>
+			</form>
+		</div>
+		<div class="my-QRcode">
+			<span>呼叫小二</span>
+			<img src="img/about-me.png" alt="my QR-code" />
+		</div>
+		<div class="download-app">
+			<span>下载有奖</span>
+			<img src="img/download-app.png" alt="my QR-code" />
+		</div>
+		<div class="footer">
+			<div class="address">
+				<ul>
+					<li><a href="">慕课简介|</a></li>
+					<li><a href="">慕课公告|</a></li>
+					<li><a href="">招贤纳士|</a></li>
+					<li><a href="">联系我们|</a><span>客服热线：400-675-1234</span></li>
+				</ul>
+				<p>Copyright © 2006 - 2014 慕课版权所有 京ICP备09037834号 京ICP证B1034-8373号 某市公安局XX分局备案编号：123456789123</p>
+				<p class="card"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"><img src="img/banner/ft_45.png"></p>
+			</div>
+		</div>
+	</body>
+
+</html>
